@@ -222,7 +222,7 @@ new Swiper(".swiper", {
   speed: 1000,
   autoplay: {
     delay: 5000,
-    disableOnInteraction: false,
+    disableOnInteraction: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",

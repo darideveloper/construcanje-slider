@@ -1,313 +1,264 @@
+/* Setup variables */
+:root {
+  --logo-size-1: 280px;
+  --logo-size-2: 250px;
+  --logo-size-3: 220px;
+  --logo-size-4: 200px;
+  --logo-size-5: 200px;
+  --logo-size-6: 200px;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .swiper {
-    width: 100%;
-    height: 600px;
+  width: 100%;
+  height: 600px;
 }
 
 .slide-content {
-    display: flex;
-    height: 100%;
+  display: flex;
+  height: 100%;
 }
 
 .left-section {
-    width: 50%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .background-image {
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    filter: brightness(0.5);
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
 }
 
 .category-name {
-    position: relative;
-    z-index: 1;
-    color: white;
-    font-size: 3rem;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 0 20px;
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 20px;
 }
 
 .right-section {
-    width: 50%;
-    background-color: #f5f5f5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    overflow: auto;
+  width: 50%;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow: auto;
 }
 
 .logo-grid {
-    display: grid;
-    gap: 20px;
-    width: fit-content;
+  display: grid;
+  gap: 20px;
+  width: fit-content;
 }
 
 /* Single logo */
-.logo-grid[data-count="1"] {
-    grid-template-columns: 250px;
+.logo-grid[data-count='1'] {
+  grid-template-columns: var(--logo-size-1);
+}
+.logo-grid[data-count='1'] .logo-container {
+  width: var(--logo-size-1);
+  height: var(--logo-size-1);
 }
 
 /* Two logos */
-.logo-grid[data-count="2"] {
-    grid-template-columns: repeat(2, 250px);
+.logo-grid[data-count='2'] {
+  grid-template-columns: repeat(2, var(--logo-size-2));
+}
+.logo-grid[data-count='2'] .logo-container {
+  width: var(--logo-size-2);
+  height: var(--logo-size-2);
 }
 
 /* Three logos */
-.logo-grid[data-count="3"] {
-    grid-template-columns: repeat(2, 250px);
-    grid-template-areas: 
-        "logo1 logo2"
-        "logo3 logo3";
+.logo-grid[data-count='3'] {
+  grid-template-columns: repeat(2, var(--logo-size-3));
+  grid-template-areas:
+    'logo1 logo2'
+    'logo3 logo3';
 }
-
-.logo-grid[data-count="3"] .logo-container:last-child {
+.logo-grid[data-count='3'] .logo-container:last-child {
     grid-area: logo3;
     justify-self: center;
 }
+.logo-grid[data-count='3'] .logo-container {
+  width: var(--logo-size-3);
+  height: var(--logo-size-3);
+}
 
 /* Four logos */
-.logo-grid[data-count="4"] {
-    grid-template-columns: repeat(2, 250px);
+.logo-grid[data-count='4'] {
+  grid-template-columns: repeat(2, var(--logo-size-4));
+}
+.logo-grid[data-count='4'] .logo-container {
+  width: var(--logo-size-4);
+  height: var(--logo-size-4);
 }
 
 /* Five logos */
-.logo-grid[data-count="5"] {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.logo-grid[data-count='5'] {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.logo-grid[data-count="5"] .top-row {
-    display: grid;
-    grid-template-columns: repeat(3, 250px);
-    gap: 20px;
+.logo-grid[data-count='5'] .top-row {
+  display: grid;
+  grid-template-columns: repeat(3, var(--logo-size-5));
+  gap: 20px;
 }
 
-.logo-grid[data-count="5"] .bottom-row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.logo-grid[data-count='5'] .bottom-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.logo-grid[data-count='5'] .bottom-row .logo-container {
+  width: var(--logo-size-5);
+  height: var(--logo-size-5);
 }
 
 /* Six logos */
-.logo-grid[data-count="6"] {
-    grid-template-columns: repeat(3, 250px);
+.logo-grid[data-count='6'] {
+  grid-template-columns: repeat(3, var(--logo-size-6));
+}
+.logo-grid[data-count='6'] .logo-container {
+  width: var(--logo-size-6);
+  height: var(--logo-size-6);
 }
 
 .logo-container {
-    width: 250px;
-    height: 250px;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    border-radius: 8px;
-    flex-shrink: 0;
-    overflow: hidden;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 8px;
+  flex-shrink: 0;
+  overflow: hidden;
 }
 
 .logo {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-    background: rgba(255, 255, 255, 0.8);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: orange;
+  background: rgba(255, 255, 255, 0.8);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: orange;
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-    font-size: 20px;
+  font-size: 20px;
 }
 
-/*  
-    Responsive design 
-    I might change it latter
-*/
-@media (max-width: 1600px) {
-    .logo-container {
-        width: 220px;
-        height: 220px;
-    }
-
-    .logo-grid[data-count="5"] .top-row,
-    .logo-grid[data-count="6"] {
-        grid-template-columns: repeat(3, 220px);
-    }
-
-    .logo-grid[data-count="2"],
-    .logo-grid[data-count="3"],
-    .logo-grid[data-count="4"] {
-        grid-template-columns: repeat(2, 220px);
-    }
-
-    .logo-grid[data-count="1"] {
-        grid-template-columns: 220px;
-    }
+@media screen and (max-width: 1600px) {
+  :root {
+    --logo-size-1: 220px;
+    --logo-size-2: 200px;
+    --logo-size-3: 180px;
+    --logo-size-4: 160px;
+    --logo-size-5: 160px;
+    --logo-size-6: 160px;
+  }
 }
 
-@media (max-width: 1400px) {
-    .logo-container {
-        width: 180px;
-        height: 180px;
-    }
-
-    .logo-grid[data-count="5"] .top-row,
-    .logo-grid[data-count="6"] {
-        grid-template-columns: repeat(3, 180px);
-    }
-
-    .logo-grid[data-count="2"],
-    .logo-grid[data-count="3"],
-    .logo-grid[data-count="4"] {
-        grid-template-columns: repeat(2, 180px);
-    }
-
-    .logo-grid[data-count="1"] {
-        grid-template-columns: 180px;
-    }
+@media screen and (max-width: 1100px) {
+  :root {
+    --logo-size-1: 200px;
+    --logo-size-2: 180px;
+    --logo-size-3: 160px;
+    --logo-size-4: 140px;
+    --logo-size-5: 140px;
+    --logo-size-6: 140px;
+  }
 }
 
-@media (max-width: 1200px) {
-    .logo-container {
-        width: 160px;
-        height: 160px;
+@media screen and (max-width: 950px) {
+    .swiper {
+        height: auto;
     }
 
-    .logo-grid[data-count="5"] .top-row,
-    .logo-grid[data-count="6"] {
-        grid-template-columns: repeat(3, 160px);
-    }
-
-    .logo-grid[data-count="2"],
-    .logo-grid[data-count="3"],
-    .logo-grid[data-count="4"] {
-        grid-template-columns: repeat(2, 160px);
-    }
-
-    .logo-grid[data-count="1"] {
-        grid-template-columns: 160px;
-    }
-
-    .category-name {
-        font-size: 2.5rem;
-    }
-
-    .logo-grid {
-        gap: 15px;
-    }
-}
-
-@media (max-width: 1000px) {
-    .logo-container {
-        width: 140px;
-        height: 140px;
-    }
-
-    .logo-grid[data-count="5"] .top-row,
-    .logo-grid[data-count="6"] {
-        grid-template-columns: repeat(3, 140px);
-    }
-
-    .logo-grid[data-count="2"],
-    .logo-grid[data-count="3"],
-    .logo-grid[data-count="4"] {
-        grid-template-columns: repeat(2, 140px);
-    }
-
-    .logo-grid[data-count="1"] {
-        grid-template-columns: 140px;
-    }
-
-    .logo-grid {
-        gap: 10px;
-    }
-}
-
-@media (max-width: 768px) {
     .slide-content {
         flex-direction: column;
-    }
-
-    .left-section,
-    .right-section {
         width: 100%;
-        height: 50%;
     }
 
-    .category-name {
-        font-size: 2rem;
+    .slide-content .left-section,
+    .slide-content .right-section {
+        width: 100%;
     }
 
-    .logo-container {
-        width: 120px;
-        height: 120px;
+    .slide-content .left-section {
+        height: 300px;
     }
 
-    .logo-grid[data-count="5"] .top-row,
-    .logo-grid[data-count="6"] {
-        grid-template-columns: repeat(3, 120px);
+    .slide-content .right-section {
+        padding: 60px 0;
     }
 
-    .logo-grid[data-count="2"],
-    .logo-grid[data-count="3"],
-    .logo-grid[data-count="4"] {
-        grid-template-columns: repeat(2, 120px);
-    }
-
-    .logo-grid[data-count="1"] {
-        grid-template-columns: 120px;
+    :root {
+        --logo-size-1: 280px;
+        --logo-size-2: 250px;
+        --logo-size-3: 220px;
+        --logo-size-4: 200px;
+        --logo-size-5: 200px;
+        --logo-size-6: 200px;
     }
 }
 
-@media (max-width: 480px) {
-    .logo-container {
-        width: 100px;
-        height: 100px;
-        padding: 5px;
-    }
-
-    .logo-grid[data-count="5"] .top-row,
-    .logo-grid[data-count="6"] {
-        grid-template-columns: repeat(3, 100px);
-    }
-
-    .logo-grid[data-count="2"],
-    .logo-grid[data-count="3"],
-    .logo-grid[data-count="4"] {
-        grid-template-columns: repeat(2, 100px);
-    }
-
-    .logo-grid[data-count="1"] {
-        grid-template-columns: 100px;
-    }
-
-    .logo-grid {
-        gap: 10px;
-    }
-
+@media screen and (max-width: 680px) {
     .category-name {
-        font-size: 1.5rem;
+        font-size:1.5rem;
+    }
+
+    :root {
+        --logo-size-1: 180px;
+        --logo-size-2: 160px;
+        --logo-size-3: 140px;
+        --logo-size-4: 120px;
+        --logo-size-5: 120px;
+        --logo-size-6: 120px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    :root {
+        --logo-size-1: 120px;
+        --logo-size-2: 100px;
+        --logo-size-3: 100px;
+        --logo-size-4: 100px;
+        --logo-size-5: 100px;
+        --logo-size-6: 100px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    :root {
+        --logo-size-1: 100px;
+        --logo-size-2: 80px;
+        --logo-size-3: 80px;
+        --logo-size-4: 80px;
+        --logo-size-5: 80px;
+        --logo-size-6: 80px;
     }
 }
