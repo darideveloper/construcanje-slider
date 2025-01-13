@@ -17,14 +17,6 @@ body.swiper-body {
   box-sizing: border-box;
 }
 
-.bar {
-  width: 95%;
-  height: 10px;
-  background-color: var(--orange);
-  justify-self: center;
-  margin-bottom: 5px;
-}
-
 .swiper {
   width: 100%;
   height: 600px;

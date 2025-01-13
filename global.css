@@ -1,0 +1,12 @@
+.bar{
+    width: 95%;
+    height: 10px;
+    background-color: var(--orange);
+    justify-self: center;
+    margin: 10px 0;
+  }
+  
+  body {
+      zoom: 90%
+  }
+  
