@@ -1,4 +1,5 @@
-const slides = [
+// Slides data
+let slides = [
   {
     title: "Caños y Conexiones para Agua",
     image: "https://placehold.co/800x600",
@@ -20,20 +21,139 @@ const slides = [
     ],
   },
   {
-    title: "Caños y Conexiones para Gas",
+    title: "Greferías",
     image: "https://placehold.co/800x600",
     logos: [
       "Fv",
-      "Piazza Grefería",
-      "Hidromet"
+      "Piazza Grifería",
+      "Hidromet",
+      "Aqualaf",
+      "iBath",
     ],
   },
-
+  {
+    title: "Sanitarios y Accesorios de Baño",
+    image: "https://placehold.co/800x600",
+    logos: [
+      "Ferrum",
+      "Roca",
+      "Prunus",
+      "Zedra",
+      "Bagnara",
+      "iBath",
+    ],
+  },
+  {
+    title: "Piesos, Revestimientos y Cerámicos",
+    image: "https://placehold.co/800x600",
+    logos: [
+      "Ilva",
+      "Cerámica Cortines",
+      "Moldumet",
+      "Cerámica Salteña",
+    ],
+  },
+  {
+    title: "Sistemas de Climatización y Calefacción",
+    image: "https://placehold.co/800x600",
+    logos: [
+      "Peisa",
+      "Ferroli",
+      "Ferroli Kanah",
+    ],
+  },
+  {
+    title: "Equipamiento de Cocina y Baño",
+    image: "https://placehold.co/800x600",
+    logos: [
+      "Johnson Acero",
+      "Morelli",
+      "TST",
+      "Mi Pileta",
+      "iBath",
+    ],
+  },
+  {
+    title: "Bombas y Sistemas de Presurización",
+    image: "https://placehold.co/800x600",
+    logos: [
+      "Motorarg",
+      "Rowa",
+    ],
+  },
+  {
+    title: "Espejos y Vidrios",
+    image: "https://placehold.co/800x600",
+    logos: [
+      "Reflejar"
+    ],
+  },
+  {
+    title: "Hierro",
+    image: "https://placehold.co/800x600",
+    logos: [
+      "Acerbrag"
+    ],
+  },
+  {
+    title: "Estructuras Metálicas",
+    image: "https://placehold.co/800x600",
+    logos: [
+      "Polimex"
+    ],
+  },
+  {
+    title: "Aberturas",
+    image: "https://placehold.co/800x600",
+    logos: [
+      "Koning Group"
+    ],
+  },
+  {
+    title: "Cerraduras Electrónicas",
+    image: "https://placehold.co/800x600",
+    logos: [
+      "BalingTech"
+    ],
+  },
+  {
+    title: "Pinturas",
+    image: "https://placehold.co/800x600",
+    logos: [
+      "Pinturas Andina"
+    ],
+  },
+  {
+    title: "Maderas",
+    image: "https://placehold.co/800x600",
+    logos: [
+      "Romano Maderera"
+    ],
+  },
+  {
+    title: "Aditivos para la Construcción",
+    image: "https://placehold.co/800x600",
+    logos: [
+      "Sika"
+    ],
+  },
 ]
+
+// Calculate logos src and alt
+for (let slide of slides) {
+  slide.logos = slide.logos.map((logo) => {
+    return {
+      src: `./img/logos/logo-${logo.toLowerCase().replaceAll(" ", "-")}.webp`,
+      alt: "Logo de " + logo,
+    }
+  })
+}
 
 const swiperWrapper = document.querySelector(".swiper-wrapper")
 
+// Setup all logos in slides
 slides.forEach((slide) => {
+
   let logosHTML
 
   if (slide.logos.length === 5) {
@@ -47,7 +167,7 @@ slides.forEach((slide) => {
         .map(
           (logo) => `
             <div class="logo-container">
-                <img src="${logo}" alt="Logo" class="logo">
+                <img src="${logo.src}" alt="${logo.alt}" class="logo">
             </div>
           `
         )
@@ -58,7 +178,7 @@ slides.forEach((slide) => {
         .map(
           (logo) => `
             <div class="logo-container">
-                <img src="${logo}" alt="Logo" class="logo">
+                <img src="${logo.src}" alt="${logo.alt}" class="logo">
             </div>
           `
         )
@@ -70,10 +190,10 @@ slides.forEach((slide) => {
     logosHTML = slide.logos
       .map(
         (logo) => `
-                    <div class="logo-container">
-                        <img src="${logo}" alt="Logo" class="logo">
-                    </div>
-                `
+          <div class="logo-container">
+              <img s src="${logo.src}" alt="${logo.alt}" class="logo">
+          </div>
+        `
       )
       .join("")
   }
@@ -96,6 +216,7 @@ slides.forEach((slide) => {
   swiperWrapper.insertAdjacentHTML("beforeend", slideHTML)
 })
 
+// Start swipper
 new Swiper(".swiper", {
   loop: true,
   speed: 1000,
