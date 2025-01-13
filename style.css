@@ -6,13 +6,23 @@
   --logo-size-4: 200px;
   --logo-size-5: 200px;
   --logo-size-6: 200px;
-  --color-orange: #ee9a37;
+  --orange: #ee9a37;
+  --white: #ffffff;
+  --background: #f5f5f5;
 }
 
 body.swiper-body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.bar{
+  width: 95%;
+  height: 10px;
+  background-color: var(--orange);
+  justify-self: center;
+  margin-bottom: 5px;
 }
 
 .swiper {
@@ -44,7 +54,7 @@ body.swiper-body {
 .category-name {
   position: relative;
   z-index: 1;
-  color: white;
+  color: var(--white);
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
@@ -53,7 +63,7 @@ body.swiper-body {
 
 .right-section {
   width: 50%;
-  background-color: #f5f5f5;
+  background-color: var(--background);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,7 +169,7 @@ body.swiper-body {
 .logo-container:hover {
   transform: scale(1.05);
   transition: transform 0.3s;
-  box-shadow: 0 0 10px var(--color-orange);
+  box-shadow: 0 0 10px var(--orange);
 }
 
 .logo {
@@ -169,11 +179,11 @@ body.swiper-body {
 
 .swiper-button-next,
 .swiper-button-prev {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(var(--white), 0.8);
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  color: var(--color-orange);
+  color: var(--orange);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
