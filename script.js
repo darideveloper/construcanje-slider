@@ -3,122 +3,245 @@ let slides = [
   {
     title: "Caños y Conexiones para Agua",
     logos: [
-      "Tigre",
-      "Industrias Saladillo",
-      "Grupo Dema Acqua System",
-      "Latyn Conexiones",
-      "Awaduct",
-      "Waterplast",
+      {
+        "name": "Tigre",
+        "href": "https://www.tigre.com.ar/",
+      },
+      {
+        "name": "Industrias Saladillo",
+        "href": "https://www.industriassaladillo.com.ar/",
+      },
+      {
+        "name": "Grupo Dema Acqua System",
+        "href": "https://grupodema.com.ar/productos/marcas/acqua-system",
+      },
+      {
+        "name": "Latyn Conexiones",
+        "href": "https://latynconexiones.com.ar/",
+      },
+      {
+        "name": "Awaduct",
+        "href": "https://awaduct.com.ar/",
+      },
+      {
+        "name": "Waterplast",
+        "href": "https://unikegroup.com.ar/waterplast/",
+      }
     ],
   },
   {
     title: "Caños y Conexiones para Gas",
     logos: [
-      "Grupo Dema Sigas Thermofusion",
-      "Tigre",
+      {
+        "name": "Grupo Dema Sigas Termofusión",
+        "href": "https://grupodema.com.ar/productos/marcas/sigas-thermofusion",
+      },
+      {
+        "name": "Tigre",
+        "href": "https://www.tigre.com.ar/",
+      }
     ],
   },
   {
     title: "Griferías",
     logos: [
-      "Fv",
-      "Piazza Grifería",
-      "Hidromet",
-      "Aqualaf",
-      "iBath",
+      {
+        "name": "Fv",
+        "href": "https://fvsa.com/",
+      },
+      {
+        "name": "Piazza Grifería",
+        "href": "https://piazzagriferia.com/",
+      },
+      {
+        "name": "Hidromet",
+        "href": "https://www.hidromet.com.ar/",
+      },
+      {
+        "name": "Aqualaf",
+        "href": "https://aqualaf.com.ar/",
+      },
+      {
+        "name": "iBath",
+        "href": "https://ibath.com.ar/",
+      }
     ],
   },
   {
     title: "Sanitarios y Accesorios de Baño",
     logos: [
-      "Ferrum",
-      "Roca",
-      "Prunus",
-      "Zedra",
-      "Bagnara",
-      "iBath",
+      {
+        "name": "Ferrum",
+        "href": "https://www.ferrum.com/",
+      },
+      {
+        "name": "Roca",
+        "href": "https://www.roca.com.ar/",
+      },
+      {
+        "name": "Prunus",
+        "href": "https://prunus.com.ar/",
+      },
+      {
+        "name": "Zedra",
+        "href": "https://www.zedra.com.ar/",
+      },
+      {
+        "name": "Bagnara",
+        "href": "https://bagnara.com.ar/",
+      },
+      {
+        "name": "iBath",
+        "href": "https://ibath.com.ar/",
+      }
     ],
   },
   {
     title: "Pisos, Revestimientos y Cerámicos",
     logos: [
-      "Ilva",
-      "Cerámica Cortines",
-      "Moldumet",
-      "Cerámica Salteña",
+      {
+        "name": "Ilva",
+        "href": "https://www.ilva.com.ar/",
+      },
+      {
+        "name": "Cerámica Cortines",
+        "href": "https://www.ceramicacortines.com/",
+      },
+      {
+        "name": "Moldumet",
+        "href": "https://www.moldumet.com/",
+      },
+      {
+        "name": "Cerámica Salteña",
+        "href": "https://www.ceramicasaltena.com.ar/",
+      }
     ],
   },
   {
     title: "Sistemas de Climatización y Calefacción",
     logos: [
-      "Peisa",
-      "Ferroli",
-      "Ferroli Kanah",
+      {
+        "name": "Peisa",
+        "href": "https://peisa.com.ar/",
+      },
+      {
+        "name": "Ferroli",
+        "href": "https://ferroli.com.ar/",
+      },
+      {
+        "name": "Ferroli Kanah",
+        "href": "https://ferroli.com.ar/kanah/",
+      }
     ],
   },
   {
     title: "Equipamiento de Cocina y Baño",
     logos: [
-      "Johnson Acero",
-      "Morelli",
-      "TST",
-      "Mi Pileta",
-      "iBath",
+      {
+        "name": "Johnson Acero",
+        "href": "https://johnsonacero.com/",
+      },
+      {
+        "name": "Morelli",
+        "href": "https://morelli.com.ar/",
+      },
+      {
+        "name": "TST",
+        "href": "https://tst.com.ar/",
+      },
+      {
+        "name": "Mi Pileta",
+        "href": "https://mipileta.com.ar/",
+      },
+      {
+        "name": "iBath",
+        "href": "https://ibath.com.ar/",
+      }
     ],
   },
   {
     title: "Bombas y Sistemas de Presurización",
     logos: [
-      "Motorarg",
-      "Rowa",
+      {
+        "name": "Rowa",
+        "href": "https://www.rowa.com.ar/",
+      },
+      {
+        "name": "Motorarg",
+        "href": "https://www.motorarg.com.ar/",
+      },
     ],
   },
   {
     title: "Espejos y Vidrios",
     logos: [
-      "Reflejar"
+      {
+        "name": "Reflejar",
+        "href": "https://reflejar.com.ar/es/",
+      }
     ],
   },
   {
     title: "Hierro",
     logos: [
-      "Acerbrag"
+      {
+        "name": "Acerbrag",
+        "href": "https://acerbrag.com/",
+      }
     ],
   },
   {
     title: "Estructuras Metálicas",
     logos: [
-      "Polimex"
+      {
+        "name": "Polimex",
+        "href": "https://www.polimex.com.ar/",
+      }
     ],
   },
   {
     title: "Aberturas",
     logos: [
-      "Koning Group"
+      {
+        "name": "Koning Group",
+        "href": "https://konig-group.com.ar/",
+      }
     ],
   },
   {
     title: "Cerraduras Electrónicas",
     logos: [
-      "BalingTech"
+      {
+        "name": "BalingTech",
+        "href": "https://www.balingtech.com.ar/"
+      }
     ],
   },
   {
     title: "Pinturas",
     logos: [
-      "Pinturas Andina"
+      {
+        "name": "Pinturas Andina",
+        "href": "https://pinturasandina.com/",
+      }
     ],
   },
   {
     title: "Maderas",
     logos: [
-      "Romano Maderera"
+      {
+        "name": "Romano Maderera",
+        "href": "https://romanomaderera.com.ar/",
+      }
     ],
   },
   {
     title: "Aditivos para la Construcción",
     logos: [
-      "Sika"
+      {
+        "name": "Sika",
+        "href": "https://arg.sika.com/",
+      }
     ],
   },
 ]
@@ -127,8 +250,10 @@ let slides = [
 for (let slide of slides) {
   slide.logos = slide.logos.map((logo) => {
     return {
-      src: `./img/logos/logo-${logo.toLowerCase().replaceAll(" ", "-")}.webp`,
-      alt: "Logo de " + logo,
+      src: `./img/logos/logo-${logo.name.toLowerCase().replaceAll(" ", "-")}.webp`,
+      alt: "Logo de " + logo.name,
+      href: logo.href,
+      name: "Empresa asociada: " + logo.name
     }
   })
 }
@@ -150,9 +275,9 @@ slides.forEach((slide) => {
           ${topRowLogos
         .map(
           (logo) => `
-            <div class="logo-container">
+            <a class="logo-container" href="${logo.href}" target="_blank" title="${logo.name}">
                 <img src="${logo.src}" alt="${logo.alt}" class="logo">
-            </div>
+            </a>
           `
         )
         .join("")}
@@ -161,9 +286,9 @@ slides.forEach((slide) => {
           ${bottomRowLogos
         .map(
           (logo) => `
-            <div class="logo-container">
+            <a class="logo-container" href="${logo.href}" target="_blank" title="${logo.name}">
                 <img src="${logo.src}" alt="${logo.alt}" class="logo">
-            </div>
+            </a>
           `
         )
         .join("")}
@@ -174,9 +299,9 @@ slides.forEach((slide) => {
     logosHTML = slide.logos
       .map(
         (logo) => `
-          <div class="logo-container">
-              <img s src="${logo.src}" alt="${logo.alt}" class="logo">
-          </div>
+          <a class="logo-container" href="${logo.href}" target="_blank" title="${logo.name}">
+              <img src="${logo.src}" alt="${logo.alt}" class="logo">
+          </a>
         `
       )
       .join("")
