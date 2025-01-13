@@ -203,7 +203,11 @@ let slides = [
       {
         "name": "Koning Group",
         "href": "https://konig-group.com.ar/",
-      }
+      },
+      {
+        "name": "Solicam",
+        "href": "https://solicam.com.ar/",
+      }  
     ],
   },
   {
