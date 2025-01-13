@@ -2,7 +2,6 @@
 let slides = [
   {
     title: "Caños y Conexiones para Agua",
-    image: "https://placehold.co/800x600",
     logos: [
       "Tigre",
       "Industrias Saladillo",
@@ -14,15 +13,13 @@ let slides = [
   },
   {
     title: "Caños y Conexiones para Gas",
-    image: "https://placehold.co/800x600",
     logos: [
       "Grupo Dema Sigas Thermofusion",
       "Tigre",
     ],
   },
   {
-    title: "Greferías",
-    image: "https://placehold.co/800x600",
+    title: "Griferías",
     logos: [
       "Fv",
       "Piazza Grifería",
@@ -33,7 +30,6 @@ let slides = [
   },
   {
     title: "Sanitarios y Accesorios de Baño",
-    image: "https://placehold.co/800x600",
     logos: [
       "Ferrum",
       "Roca",
@@ -44,8 +40,7 @@ let slides = [
     ],
   },
   {
-    title: "Piesos, Revestimientos y Cerámicos",
-    image: "https://placehold.co/800x600",
+    title: "Pisos, Revestimientos y Cerámicos",
     logos: [
       "Ilva",
       "Cerámica Cortines",
@@ -55,7 +50,6 @@ let slides = [
   },
   {
     title: "Sistemas de Climatización y Calefacción",
-    image: "https://placehold.co/800x600",
     logos: [
       "Peisa",
       "Ferroli",
@@ -64,7 +58,6 @@ let slides = [
   },
   {
     title: "Equipamiento de Cocina y Baño",
-    image: "https://placehold.co/800x600",
     logos: [
       "Johnson Acero",
       "Morelli",
@@ -75,7 +68,6 @@ let slides = [
   },
   {
     title: "Bombas y Sistemas de Presurización",
-    image: "https://placehold.co/800x600",
     logos: [
       "Motorarg",
       "Rowa",
@@ -83,56 +75,48 @@ let slides = [
   },
   {
     title: "Espejos y Vidrios",
-    image: "https://placehold.co/800x600",
     logos: [
       "Reflejar"
     ],
   },
   {
     title: "Hierro",
-    image: "https://placehold.co/800x600",
     logos: [
       "Acerbrag"
     ],
   },
   {
     title: "Estructuras Metálicas",
-    image: "https://placehold.co/800x600",
     logos: [
       "Polimex"
     ],
   },
   {
     title: "Aberturas",
-    image: "https://placehold.co/800x600",
     logos: [
       "Koning Group"
     ],
   },
   {
     title: "Cerraduras Electrónicas",
-    image: "https://placehold.co/800x600",
     logos: [
       "BalingTech"
     ],
   },
   {
     title: "Pinturas",
-    image: "https://placehold.co/800x600",
     logos: [
       "Pinturas Andina"
     ],
   },
   {
     title: "Maderas",
-    image: "https://placehold.co/800x600",
     logos: [
       "Romano Maderera"
     ],
   },
   {
     title: "Aditivos para la Construcción",
-    image: "https://placehold.co/800x600",
     logos: [
       "Sika"
     ],
@@ -198,11 +182,12 @@ slides.forEach((slide) => {
       .join("")
   }
 
+  const bgImageUrl = `./img/bg/${slide.title.toLowerCase().replaceAll(" ", "-")}.webp`
   const slideHTML = `
     <div class="swiper-slide">
         <div class="slide-content">
             <div class="left-section">
-                <div class="background-image" style="background-image: url('${slide.image}')"></div>
+                <div class="background-image" style="background-image: url('${bgImageUrl}')"></div>
                 <h2 class="category-name">${slide.title}</h2>
             </div>
             <div class="right-section">
