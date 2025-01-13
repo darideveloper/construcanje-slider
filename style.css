@@ -179,7 +179,7 @@ body.swiper-body {
 
 .swiper-button-next,
 .swiper-button-prev {
-  background: rgba(var(--white), 0.8);
+  background: var(--white);
   width: 50px;
   height: 50px;
   border-radius: 50%;

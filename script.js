@@ -1,5 +1,6 @@
 // Slides data
 const imagesHost = "https://raw.githubusercontent.com/SilviaEera/Swiper-Slider-wp/refs/heads/master/img"
+// const imagesHost = "./img"
 let slides = [
   {
     title: "Caños y Conexiones para Agua",
@@ -245,6 +246,15 @@ let slides = [
       }
     ],
   },
+  {
+    title: "Soluciones y Tecnologias Constructivas Sustentables",
+    logos: [
+      {
+        "name": "Estisol Construcción",
+        "href": "https://www.estisolconstruccion.com/",
+      }
+    ],
+  }
 ]
 
 // Calculate logos src and alt
