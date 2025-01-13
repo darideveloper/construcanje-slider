@@ -1,4 +1,5 @@
 // Slides data
+const imagesHost = "https://raw.githubusercontent.com/SilviaEera/Swiper-Slider-wp/refs/heads/master/img"
 let slides = [
   {
     title: "Caños y Conexiones para Agua",
@@ -250,7 +251,7 @@ let slides = [
 for (let slide of slides) {
   slide.logos = slide.logos.map((logo) => {
     return {
-      src: `./img/logos/logo-${logo.name.toLowerCase().replaceAll(" ", "-")}.webp`,
+      src: `${imagesHost}/logos/logo-${logo.name.toLowerCase().replaceAll(" ", "-")}.webp`,
       alt: "Logo de " + logo.name,
       href: logo.href,
       name: "Empresa asociada: " + logo.name
@@ -276,7 +277,7 @@ slides.forEach((slide) => {
         .map(
           (logo) => `
             <a class="logo-container" href="${logo.href}" target="_blank" title="${logo.name}">
-                <img src="${logo.src}" alt="${logo.alt}" class="logo">
+                <img src="${logo.src}" alt="${logo.alt}" class="logo" loading="lazy">
             </a>
           `
         )
@@ -287,7 +288,7 @@ slides.forEach((slide) => {
         .map(
           (logo) => `
             <a class="logo-container" href="${logo.href}" target="_blank" title="${logo.name}">
-                <img src="${logo.src}" alt="${logo.alt}" class="logo">
+                <img src="${logo.src}" alt="${logo.alt}" class="logo" loading="lazy">
             </a>
           `
         )
@@ -300,14 +301,14 @@ slides.forEach((slide) => {
       .map(
         (logo) => `
           <a class="logo-container" href="${logo.href}" target="_blank" title="${logo.name}">
-              <img src="${logo.src}" alt="${logo.alt}" class="logo">
+              <img src="${logo.src}" alt="${logo.alt}" class="logo" loading="lazy">
           </a>
         `
       )
       .join("")
   }
 
-  const bgImageUrl = `./img/bg/${slide.title.toLowerCase().replaceAll(" ", "-")}.webp`
+  const bgImageUrl = `${imagesHost}/bg/${slide.title.toLowerCase().replaceAll(" ", "-")}.webp`
   const slideHTML = `
     <div class="swiper-slide">
         <div class="slide-content">
