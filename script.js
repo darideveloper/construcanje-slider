@@ -1,6 +1,6 @@
 // Slides data
-const imagesHost = "https://raw.githubusercontent.com/SilviaEera/Swiper-Slider-wp/refs/heads/master/img"
-// const imagesHost = "./img"
+// const imagesHost = "https://raw.githubusercontent.com/SilviaEera/Swiper-Slider-wp/refs/heads/master/img"
+const imagesHost = "./img"
 let slides = [
   {
     title: "Caños y Conexiones para Agua",
@@ -137,7 +137,7 @@ let slides = [
     ],
   },
   {
-    title: "Equipamiento de Cocina y Baño",
+    title: "Equipamiento de Cocina",
     logos: [
       {
         "name": "Johnson Acero",
@@ -155,10 +155,6 @@ let slides = [
         "name": "Mi Pileta",
         "href": "https://mipileta.com.ar/",
       },
-      {
-        "name": "iBath",
-        "href": "https://ibath.com.ar/",
-      }
     ],
   },
   {
@@ -175,7 +171,7 @@ let slides = [
     ],
   },
   {
-    title: "Espejos y Vidrios",
+    title: "Espejos",
     logos: [
       {
         "name": "Reflejar",
