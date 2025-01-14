@@ -188,7 +188,7 @@ body.swiper-body {
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 1600px) {
