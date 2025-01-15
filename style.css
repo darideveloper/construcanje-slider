@@ -33,6 +33,7 @@ body.swiper-body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .background-image {
@@ -41,6 +42,10 @@ body.swiper-body {
   background-size: cover;
   background-position: center;
   filter: brightness(0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .category-name {

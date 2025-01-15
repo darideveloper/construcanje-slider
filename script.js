@@ -323,7 +323,7 @@ slides.forEach((slide) => {
     <div class="swiper-slide">
         <div class="slide-content">
             <div class="left-section">
-                <div class="background-image" style="background-image: url('${bgImageUrl}')"></div>
+                <img class="background-image" src="${bgImageUrl}" alt="Imagen de ${slide.title}" loading="lazy">
                 <h2 class="category-name">${slide.title}</h2>
             </div>
             <div class="right-section">
