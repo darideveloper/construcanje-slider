@@ -240,15 +240,6 @@ let slides = [
     ],
   },
   {
-    title: "Aditivos para la Construcción",
-    logos: [
-      {
-        name: "Sika",
-        href: "https://arg.sika.com/",
-      },
-    ],
-  },
-  {
     title: "Soluciones y Tecnologias Constructivas Sustentables",
     logos: [
       {
