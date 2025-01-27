@@ -307,6 +307,8 @@ slides.forEach((slide) => {
   const bgImageUrl = `${imagesHost}/bg/${slide.title
     .toLowerCase()
     .replaceAll(" ", "-")}.webp`
+  const evenOddClass = (slide.logos.length % 2 == 0) ? "even" : "odd"
+  const id = "logo-grid-" + slide.title.toLowerCase().replaceAll(" ", "-").replaceAll(",", "")
   const slideHTML = `
     <div class="swiper-slide">
         <div class="slide-content">
@@ -315,7 +317,7 @@ slides.forEach((slide) => {
                 <h2 class="category-name">${slide.title}</h2>
             </div>
             <div class="right-section">
-                <div class="logo-grid" data-count="${slide.logos.length}">
+                <div class="logo-grid ${evenOddClass}" data-count="${slide.logos.length}" id="${id}">
                     ${logosHTML}
                 </div>
             </div>
@@ -323,6 +325,20 @@ slides.forEach((slide) => {
     </div>
   `
   swiperWrapper.insertAdjacentHTML("beforeend", slideHTML)
+
+  // Add custom grid template columns for even and odd logos
+  const logoGrids = document.querySelector(`#${id}`)
+  console.log({ logoGrids, id })
+  if (slide.logos.length == 2) {
+    // Two logos
+    logoGrids.style.gridTemplateColumns = "1fr 1fr"
+  } else if (slide.logos.length % 2 == 0) {
+    // Even logos
+    logoGrids.style.gridTemplateColumns = `repeat(${slide.logos.length / 2}, 1fr)`
+  } else {
+    // Odd logos
+    logoGrids.style.gridTemplateColumns = "1fr"
+  }
 })
 
 // Start swipper
