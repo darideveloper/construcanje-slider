@@ -43,6 +43,10 @@ let slides = [
         name: "Waterplast",
         href: "https://unikegroup.com.ar/waterplast/",
       },
+      {
+        name: "Polimex",
+        href: "https://www.polimex.com.ar/",
+      },
     ],
   },
   {
@@ -51,10 +55,6 @@ let slides = [
       {
         name: "Grupo Dema Sigas Termofusión",
         href: "https://grupodema.com.ar/productos/marcas/sigas-thermofusion",
-      },
-      {
-        name: "Tigre",
-        href: "https://www.tigre.com.ar/",
       },
     ],
   },
@@ -76,10 +76,6 @@ let slides = [
       {
         name: "Aqualaf",
         href: "https://aqualaf.com.ar/",
-      },
-      {
-        name: "iBath",
-        href: "https://ibath.com.ar/",
       },
     ],
   },
@@ -202,16 +198,6 @@ let slides = [
       },
     ],
   },
-  {
-    title: "Estructuras Metálicas",
-    logos: [
-      {
-        name: "Polimex",
-        href: "https://www.polimex.com.ar/",
-      },
-    ],
-  },
-
   {
     title: "Cerraduras Electrónicas",
     logos: [
