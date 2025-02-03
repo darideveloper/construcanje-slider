@@ -1,6 +1,5 @@
 // Slides data
-const imagesHost =
-  "https://raw.githubusercontent.com/SilviaEera/Swiper-Slider-wp/refs/heads/master/img"
+const imagesHost = "https://raw.githubusercontent.com/SilviaEera/Swiper-Slider-wp/refs/heads/master/img"
 // const imagesHost = "./img"
 let slides = [
   {
@@ -14,6 +13,10 @@ let slides = [
         name: "Solicam",
         href: "https://solicam.com.ar/",
       },
+      {
+        name: "Nexo Aberturas",
+        href: "https://www.nexo-aberturas.com.ar/",
+      }
     ],
   },
   {
