@@ -16,6 +16,10 @@ let slides = [
       {
         name: "Nexo Aberturas",
         href: "https://www.nexo-aberturas.com.ar/",
+      },
+      {
+        name: "oBlack",
+        href: "https://www.oblak.com.ar/",
       }
     ],
   },
