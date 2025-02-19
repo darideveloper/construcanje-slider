@@ -155,6 +155,10 @@ let slides = [
         name: "Ferroli Kanah",
         href: "https://ferroli.com.ar/kanah/",
       },
+      {
+        name: "BGH",
+        href: "https://store.bgh.com.ar/?gad_source=1",
+      },
     ],
   },
   {
