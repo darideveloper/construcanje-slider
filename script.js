@@ -1,5 +1,5 @@
 // Slides data
-const imagesHost = "https://raw.githubusercontent.com/SilviaEera/Swiper-Slider-wp/refs/heads/master/img"
+const imagesHost = "https://raw.githubusercontent.com/darideveloper/construcanje-slider/refs/heads/master/img"
 // const imagesHost = "./img"
 let slides = [
   {
