@@ -196,11 +196,15 @@ let slides = [
     ],
   },
   {
-    title: "Espejos",
+    title: "Vidrios y Espejos",
     logos: [
       {
         name: "Reflejar",
         href: "https://reflejar.com.ar/es/",
+      },
+      {
+        name: "Kalciyan",
+        href: "https://www.kalciyan.com.ar/",
       },
     ],
   },
